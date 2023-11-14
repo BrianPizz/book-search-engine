@@ -9,7 +9,6 @@ const { authMiddleware } = require('./utils/auth');
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
 
-
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -45,7 +44,5 @@ const startApolloServer = async () => {
   });
 };
 
-
 // Call the async function to start the server
 startApolloServer();
-
